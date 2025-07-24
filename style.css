@@ -113,7 +113,7 @@ nav ul li a {
 .hero-container {
     display: flex;
     align-items: end;
-    margin: 10px;
+    margin: 15px;
 }
 
 
@@ -122,8 +122,8 @@ nav ul li a {
     width: 100%;
 }
 
-.headings img p {
-    font-size: 22px;
+.headings p {
+    font-size: 1.5rem;
 
 }
 
@@ -151,7 +151,8 @@ nav ul li a {
 }
 
 .plants-headings p {
-    max-width: 800px;
+    width: 80%;
+    text-align: center;
     font-size: 1.5rem;
     margin: 1rem;
 }
@@ -236,22 +237,27 @@ nav ul li a {
 }
 
 /* Deals section */
+.grid-container h1 {
+    font-weight: normal;
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     text-align: center;
+    
 
 }
 
+.deals .plants-headings {
+    margin-bottom: 100px;
+}
 
 .items-1 {
-
     width: 365px;
     height: 205px;
     grid-area: 2 / 1 / 3 / 3;
     background-image: url(assets/deal-ana.png);
     background-repeat: no-repeat;
-
     color: white;
 }
 
@@ -268,7 +274,7 @@ nav ul li a {
 .items-3 {
     width: 750px;
     height: 100%;
-    grid-area: 1 / 3 / 6 / 7;
+    grid-area: 1 / 4 / 6 / 7;
     background-image: url(assets/deal-zabo.png);
     background-repeat: no-repeat;
     place-content: center;
@@ -473,9 +479,7 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        place-content: center;
+        gap: 18px;
         text-align: center;
         align-items: center;
     }
@@ -483,6 +487,10 @@ footer {
     .items-3 {
         width: 360px;
         height: 205px;
+    }
+
+    .deals .plants-headings {
+        margin-bottom: 0;
     }
 
     /* Joint section */
