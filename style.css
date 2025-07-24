@@ -30,13 +30,25 @@
     color: #E95A08;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.border-r {
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
 .bg {
     background: #E95A08;
 }
 
 .btn {
     width: 100%;
-    padding: 1.5rem 3rem;
+    padding: 0.5rem 3rem;
     color: white;
     font-size: 1rem;
     border: none;
@@ -48,6 +60,7 @@
     color: white;
     font-size: 1rem;
     border: none;
+    text-decoration: underline;
 }
 
 /* Nav */
@@ -138,6 +151,7 @@ nav ul li a {
 }
 
 .plants-headings p {
+    max-width: 800px;
     font-size: 1.5rem;
     margin: 1rem;
 }
@@ -177,11 +191,6 @@ nav ul li a {
 .card-data h6 {
     margin-bottom: 15px;
 }
-
-/* Deals Section */
-
-
-
 
 /* Badge section */
 .badge {
@@ -227,9 +236,44 @@ nav ul li a {
 }
 
 /* Deals section */
-.deals {}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+
+}
 
 
+.items-1 {
+
+    width: 365px;
+    height: 205px;
+    grid-area: 2 / 1 / 3 / 3;
+    background-image: url(assets/deal-ana.png);
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.items-2 {
+    width: 365px;
+    height: 205px;
+    grid-area: 3 / 1 / 4 / 3;
+    background-image: url(assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    place-content: center;
+    color: white;
+}
+
+.items-3 {
+    width: 750px;
+    height: 100%;
+    grid-area: 1 / 3 / 6 / 7;
+    background-image: url(assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    place-content: center;
+    color: white;
+}
 
 /* joint section */
 .joint {
@@ -241,6 +285,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 60px;
 }
 
 .joint-container {
@@ -424,7 +469,21 @@ footer {
     }
 
     /* Deals section */
+    .grid-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        place-content: center;
+        text-align: center;
+        align-items: center;
+    }
 
+    .items-3 {
+        width: 360px;
+        height: 205px;
+    }
 
     /* Joint section */
     .joint {
@@ -453,7 +512,5 @@ footer {
         align-items: flex-start;
         padding: 50px 160px 50px 20px;
         gap: 40px;
-
-
     }
 }
