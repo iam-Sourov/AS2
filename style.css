@@ -13,7 +13,7 @@
     font-optical-sizing: auto;
 }
 
-body {
+.box {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -36,8 +36,8 @@ body {
 
 .btn {
     width: 100%;
-    padding: 25px 50px;
-    color: #ffffff;
+    padding: 1.5rem 3rem;
+    color: white;
     font-size: 1rem;
     border: none;
 }
@@ -125,7 +125,7 @@ nav ul li a {
 }
 
 .plants-headings h1 {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .plants-headings p {
@@ -160,7 +160,7 @@ nav ul li a {
 
 .card-data {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 25px;
 }
 
@@ -169,27 +169,39 @@ nav ul li a {
 }
 
 /* Deals Section */
-.deals {
-    display: flex;
-    flex-direction: column;
+
+
+
+
+/* Badge section */
+.badge {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
-.img-body {
+.badge-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 360px;
-    height: 200px;
-    color: white;
-    font-weight: 700;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(assets/deal-ana.png) lightgray 50% / cover no-repeat;
 }
 
-.img-body button {
-    width: fit-content;
-    background-color: transparent;
+.img-container {
+    flex: 1;
+}
 
+.badge-details {
+    width: 550px;
+}
+
+.badge-details h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+
+}
+
+.badge-details ul li {
+    margin-bottom: 20px;
 }
 
 /* joint section */
@@ -207,13 +219,16 @@ nav ul li a {
 .joint-container {
     width: 100%;
     max-width: 500px;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .joint-container h1 {
-    font-size: 64px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
     color: white;
-
 }
 
 .form {
@@ -221,11 +236,19 @@ nav ul li a {
 
 }
 
-.form input,
+.form input {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: none;
+}
+
 .form button {
-    width: 100%;
-    padding: 16px;
-    font-size: 16px;
+    width: 30%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
     box-sizing: border-box;
     border: none;
 }
@@ -235,7 +258,7 @@ nav ul li a {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 30px 100px;
+    padding: 2rem 6rem;
 }
 
 .details p {
@@ -298,11 +321,13 @@ footer {
     }
 
     .headings h6 {
-        font-size: 24px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+
     }
 
     .headings p {
-        font-size: 14px;
+        font-size: 0.8rem;
     }
 
     /* Plants section */
@@ -310,17 +335,24 @@ footer {
         margin: 20px;
     }
 
+    .card-body button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .plants-headings {
         margin: 10px;
     }
 
     .plants-headings h1 {
-        font-size: 24px;
+        font-size: 1.5rem;
         margin-bottom: 20px;
     }
 
     .plants-headings p {
-        font-size: 14px;
+        font-size: 0.8rem;
+
     }
 
     .card-container {
@@ -328,7 +360,37 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .card-body {}
+    /* badge section */
+    .badge {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .badge-container {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .badge-container img {
+        width: 100%;
+    }
+
+    .badge-details {
+        width: 90%;
+
+    }
+
+    .badge-details h1 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+
+    }
+
+    .badge-details p {
+        font-size: 0.8rem;
+
+    }
 
     /* Joint section */
     .joint {
@@ -338,7 +400,7 @@ footer {
     }
 
     .joint-container h1 {
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-bottom: 15px;
     }
 
